@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    let dog = {
+        legs: 4,
+        name: 'Allen',
+        color: 'brown',
+        ability: {
+            jump: function () {
+                console.log('Jump!');
+            },
+            sound: function () {
+                console.log('wow');
+            },
+            sleep: function () {
+                console.log('ZZZzzz...');
+            }
+        }
+    };
+
+    //使用「[ ]」來存取屬性或函式：
+    console.log(dog['legs']); // 輸出 4
+    console.log(dog['name']); // 輸出 Darren
+    dog['ability'].sleep(); // 輸出 ZZZzzz...
+    dog['ability'].sound(); // 輸出 Meow~
+
+    //使用「.」來存取屬性或函式：
+    console.log(dog.legs); // 輸出 4
+    console.log(dog.color); // 輸出 Tangerine
+    dog.ability.sound(); // 輸出 Meow~
+    dog.ability.sleep(); // 輸出 ZZZzzz…
+</script>
+
+<body>
+
+</body>
+
+</html>

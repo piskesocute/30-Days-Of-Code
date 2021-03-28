@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        //用 for 迴圈實現物件的複製
+        let obj01 = { name: "Bill", age: 25 };
+        let obj02 = {};
+        for (let key in obj01) {
+            obj02[key] = obj01[key];
+        }
+        console.log(obj01);
+        console.log(obj02);
+
+
+        //轉成 json 後，再轉成 object，來實現物件的複製
+        let obj03 = { name: "Alex", age: 18 };
+        let strJson = JSON.stringify(obj03);
+        let obj04 = JSON.parse(strJson);
+        console.log(strJson);
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

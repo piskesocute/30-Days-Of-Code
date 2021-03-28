@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let dog = {
+            name: "Allen",
+            color: "brown",
+            age: "4",
+            ability: {
+                run: function () {
+                    console.log("fast");
+
+                },
+
+
+            }
+
+
+        };
+
+        // 增加物件屬性
+        dog["eye_color"] = "red";
+        dog.habbit = "sleep";
+        console.log(dog)
+        console.dir(dog, { depth: null });//列出物件內容
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>
