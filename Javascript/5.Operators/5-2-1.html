@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>關係運算子</title>
+    <script>
+        // "==" VS "==="
+        // x==y 若是型態不相等，則會先強制轉換型態再進行嚴格比對
+        // x===y 若是型態不相等，則不轉換型態，直接進行嚴格比對 
+
+
+        let hadShoes = true;
+        let hadBackpack = false;
+        console.log(hadShoes && hadBackpack);
+        //輸出 false，代表還沒準備好出門
+        // 運算式1可以被轉換成false的話回傳運算式1否則回傳運算式2
+        // 
+
+        let hasApple = true;
+        let hasBanana = false;
+        console.log(hasApple || hasBanana);
+        // 輸出 true
+        // 運算式1可以被轉換成true的話回傳運算式1否則回傳運算式2
+
+        let isWeekend = true;
+        let workAllDay = !isWeekend;
+        console.log(workAllDay);
+        // 輸出 false，代表不需要工作整天
+
+        let apple = 40;
+        let pineApple = 100;
+        console.log(apple > pineApple); // false
+        console.log(apple >= pineApple); // false
+        console.log(apple == pineApple); // false
+        console.log(apple < pineApple); // true
+        console.log(apple <= pineApple); // true
+        console.log(apple != pineApple); // true
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
