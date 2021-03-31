@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>雙引號、單引號、樣板字面值</title>
+</head>
+
+<body>
+    <script>
+        // 宣告
+        let strName = 'Evan';
+        // 單引號
+        document.write('Hello World ' + strName + '...');
+
+        // 雙引號
+        document.write("Hello World " + strName + "...");
+        // 樣板字面值 template literals
+        document.write(`myName is ${strName}...`);
+
+        let a = 'pink';
+        let b = 'color';
+        document.write(`${a}+${b}`);
+        let c = 10;
+        let d = 12;
+        document.write(`${c + d},${c * d}`);
+
+
+    </script>
+
+</body>
+
+</html>
