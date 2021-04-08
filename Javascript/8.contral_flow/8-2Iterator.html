@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>迭代</title>
+</head>
+
+<body>
+    <script>
+        let items = [1, 2, 3, 4, 5];
+        // for (let i = 0; i < items.length; i++) {
+        //     console.log(`the item is ${items[i]}`)
+
+
+
+        // }
+
+        function createIterator(items) {
+            let i = 0;
+            return {
+                next: function () {
+                    let done = (i >= items.length);
+                    let value = done ? undefine : items[i++];
+                    return {
+                        done: done,
+                        value: value
+
+
+                    }
+
+                }
+            };
+        }
+        let iterator = createIterator([1, 2, 3]);
+        console.log(iterator.next()); //done:false,value:1
+        console.log(iterator.next());//done:false,value:2
+        console.log(iterator.next());//done:false,value:3
+        //到這邊終止    //done:true value:undefined
+        console.log(iterator.next());
+        console.log(iterator.next());
+        console.log(iterator.next());
+
+    </script>
+</body>
+
+</html>
