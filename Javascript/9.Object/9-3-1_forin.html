@@ -10,6 +10,7 @@
 
 <body>
     <script>
+        // 物件
         let obj = {
             fname: "Darren",
             lname: "Yang",
@@ -19,7 +20,7 @@
         for (let attr in obj) {
             console.log(`the property in object variable is ${attr}`);
         }
-
+        // 陣列
         let arr = [
             'a',
             'b',
@@ -30,6 +31,25 @@
         for (let key in arr) {
             console.log(`the index number in array variable is ${key}`);
         }
+
+        for (let value of arr) {
+            console.log(`the value in array variable is ${value}`);
+        }
+
+
+        // let ob = {
+        //     fname: "Darren",
+        //     lname: "Yang",
+        //     age: "null",
+        //     lineId: "telunyang"
+
+
+        // }
+        // for (let v of ob) {
+        //     console.log(`the value in object variable is ${v}`);
+        // }
+        //TypeError: ob is not iterable 物件內部以屬性的方式存在，沒有有序的鍵(key)無法迭代
+
 
     </script>
 </body>
